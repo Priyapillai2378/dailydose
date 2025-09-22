@@ -56,7 +56,7 @@ function Header({ showForm, setShowForm }) {
   return (
     <header className="header">
       <div className="logo">
-        <img src={logo} className="pic" />
+        <img src={logo} className="pic" alt="Logo" />
         <h1>{appTitle}</h1>
       </div>
       <button
