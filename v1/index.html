@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Coiny&family=Poppins:wght@200&display=swap" rel="stylesheet" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Coiny&family=Poppins:wght@200&family=Sono:wght@500;600&display=swap"
+    rel="stylesheet" />
+</head>
+
+<body>
+  <div class="container">
+    <!-- Logo and Header -->
+    <header class="header">
+      <div class="logo"><img src="logo.png" alt="" height="100" width="100" />
+        <h1>DailyDose</h1>
+      </div>
+      <button class="btn btn-large share-btn" id="share">Share a Dose</button>
+    </header>
+    <!-- Form -->
+    <form action="" class="Dose-Form hidden">
+      <input type="text" placeholder="Enter your dose" />
+      <span>1000</span>
+      <input type="text" placeholder="Enter a source" />
+      <select>
+        <optgroup label="Code Snippets">
+          <option value="">Java</option>
+          <option value="">Python</option>
+          <option value="">C</option>
+        </optgroup>
+        <option value="">Aptitude</option>
+        <option value="">Pattern</option>
+        <option value="">Interview Qns</option>
+      </select>
+      <button class="btn btn-large">Post</button>
+    </form>
+    <!-- Categories -->
+    <main class="main">
+      <aside>
+        <ul class="DoseCat">
+          <li>
+            <button class="btn btn-all-categories">All</button>
+          </li>
+          <li class="snippet-category"><button class="btn btn-category">Code snippets </button>
+          </li>
+          <ul class="sub-category">
+            <li class="sub-category"><button class="btn btn-sub-category">
+                Java</button></li>
+            <li class="sub-category"><button class="btn  btn-sub-category">Python</button></li>
+            <li class="last-sub-category"><button class="btn  btn-sub-category"> C</button></li>
+          </ul>
+          <li class="category"><button class="btn  btn-category">Apttitude</button></li>
+          <li class="category"><button class="btn  btn-category">Interview Qns</button></li>
+          <li class="category"><button class="btn  btn-category">Pattern</button></li>
+
+
+        </ul>
+      </aside>
+      <!-- Contents -->
+      <section>
+        <ul class="Dose-List">
+          <li class="dose-content">
+            <p>
+            <pre>
+        int n1=0,n2=1,n3,i;
+        int count=10;    
+        System.out.print(n1+" "+n2);    
+        for(i=2;i < count;++i)   
+        {    
+         n3=n1+n2;    
+         System.out.print(" "+n3);    
+         n1=n2;    
+         n2=n3;    
+        }    
+      </pre>
+            <a class="source" href="https://www.javatpoint.com/fibonacci-series-in-java">(source)</a>
+            </p>
+            <span class="tag" style="background-color:#0369a1;">CODESNIPPETS</span>
+            <div class="vote">
+              <button class="reactions">💖24</button>
+              <button class="reactions">🤯10</button>
+              <button class="reactions">👎2</button>
+            </div>
+          </li>
+          <li class="dose-content">
+            <p>
+              What’s your management style?<br>
+              A good manager gives clear directions and is ready to jump in to offer guidance, expertise, and help when
+              needed. I also go out of my way to make sure I know when my team needs help.
+              <a class="source"
+                href="https://www.themuse.com/advice/interview-questions-and-answers#c94aaea8-2076-4a8a-8df1-fb0c1be56e3c">(source)</a>
+
+            </p>
+            <span class="tag" style="background-color:#0369a1;">INTERVIEW QUESTIONS</span>
+            <div class="vote">
+              <button class="reactions">💖24</button>
+              <button class="reactions">🤯10</button>
+              <button class="reactions">👎2</button>
+            </div>
+          </li>
+        </ul>
+      </section>
+    </main>
+  </div>
+  <script src="script.js"></script>
+</body>
+
+</html>

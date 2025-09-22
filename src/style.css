@@ -1,0 +1,318 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+h1{
+   color:#2390d9; 
+    font-family: "coiny";
+    text-align: center;
+    font-size:45px;
+}
+body{
+    font-family: 'sono',sans-serif;
+    background-color:#292524;
+    color:#fafaf9;
+    padding: 48px 64px 0px;
+}
+.pic{
+    width:62px;
+    height:58px;
+    position: relative;
+    top:-5px;
+}
+#root{
+    max-width:1500px;
+    margin: 0 auto;
+
+}
+.header{
+    margin-bottom:40px;
+    padding: 10px;
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.main{
+    display: grid;
+    grid-template-columns:250px 1fr;
+    height:80vh;
+}
+@media(min-width:900px){
+section{
+    overflow: scroll;
+    scrollbar-width:none;
+    padding-bottom:40px;
+}
+section::-webkit-scrollbar {
+    display: none;
+  }
+}
+pre {
+    font-family: 'sono', sans-serif;
+    font-size: 14px;
+    background-color:#404040 ;
+    display: flex;
+    padding: 10px;
+    border: 1px solid #2390d9;
+    border-radius: 4px;
+    white-space: pre-wrap;
+}
+.code{
+    background-color:#404040 ;
+}
+
+
+@media(min-width:750px)and ( max-width:1100px ){
+    pre{
+    padding: 15px 30px;
+    margin-left:25px;
+    margin-right:100px;
+    }
+    }
+.Dose-List{
+   list-style: none;
+}
+.DoseCat{
+    list-style: none;
+ }
+button{
+    background-color:#fafaf9;
+}
+.vote{
+    margin-left: auto;
+    flex-shrink:0;
+    display:flex;
+    gap: 8px;
+}
+.reactions{
+border: none;
+border-radius:100px;
+padding:6px 12px;
+background-color: #525252;
+font-size:16px;
+color:inherit;
+font: weight 600;
+cursor:pointer;
+transition: 0.3s;
+}
+.reactions:hover{
+    background-color:#292524;
+}
+.reactions:disabled{
+    background-color:  #525252;
+}
+.dose-content{
+    background-color: #404040;
+    font-size:16px;
+    line-height: 1.4;
+    margin-bottom:16px;
+    padding:16px 24px;
+    border-radius: 16px;
+    list-style: none;
+    display: flex;
+    align-items: center;
+    gap: 24px;
+    letter-spacing:-1px;
+}
+
+.dose-content span{
+    border-radius:100px;
+    color: black;
+}
+
+.logo{
+    display: flex;
+    align-items: center;
+    gap:10px;
+}
+.Dose-Form{
+    background: #404040;
+    margin-bottom:40px;
+    padding:16px 32px;
+    display:flex;
+    align-items: center;
+    gap:16px;
+    border-radius:16px;
+}
+.hidden{
+    display:none;
+}
+
+.Dose-Form select,
+.Dose-Form input{
+    max-width: 250px;
+   background-color:  #525252; 
+   border:none;
+   border-radius: 100px;
+   padding:16px;
+   color:inherit;
+   font-family: inherit; 
+}
+.Dose-Form select option:hover{
+   background-color: #2390d9;
+}
+.Dose-Form input::placeholder{
+    color:#a8a29e;
+}
+.Dose-Form input:first-child{
+    flex-grow:1;
+}
+.Dose-Form span{
+    font-weight:600;
+    font-size: 18px;
+    margin-right:18px;
+}
+.message{
+    text-align: center;
+    text-transform: uppercase;
+    font-size:30px;
+    font-weight: bolder;
+}
+.tag{
+font-size: 16px;
+font: weight 2px;;
+font-family: coiny,sans-serif;
+background-color: #404040;
+color: #fafaf9;
+text-decoration: none;
+padding-top: 3px;
+padding-left:10px;
+padding-right: 10px;
+}
+
+.source:link,
+.source:visited{
+    color:#a8a29e;
+    text-decoration:none;
+    margin-left:12px;
+    transition:0.3s;
+    color:(13, 108, 155)rgb;
+}
+.source:hover,
+.source:active{
+    color:#2390d9;
+}
+.btn{
+    font-family:'coiny',sans-serif;
+    text-transform: uppercase;
+    padding:16px 0px 13px;
+    background-image: linear-gradient(to right,#2390d9,#dc2626);
+    border:none;
+    border-radius: 10px;
+    margin-right:10px;
+    transition: 0.3s;
+}
+.btn:hover{
+    transform: scale(110%) ;
+}
+.btn-large{
+    font-size:20px;
+    padding:10px 20px ;
+}
+
+.btn-all-categories{
+    width:90%;
+    margin-bottom:10px;
+}
+.btn-category{
+ width:90%;
+}
+.btn-sub-categories{
+    width:90%;
+    background-image:linear-gradient(to right,#172554,#0369a1);
+    
+}
+
+.category{
+    margin-bottom:16px;
+}
+
+.snippet-category{
+    margin-bottom:6px;
+}
+.disputed{
+   color:#dc2626;
+   font-weight: bold;
+}
+@media(max-width:1200px){
+    .dose-content{
+        flex-direction: column;
+        align-items: flex-end;
+        gap:12px;
+    }
+}
+@media(min-width:1099px) and(max-width:1200px) {
+    pre{
+        margin-left:-500px;
+        padding:15px 10px;
+        margin-right:25%;
+        align-items: left;
+    }
+}
+
+@media(max-width:1000px){
+    body{
+        padding:32px 48px;
+    }
+    .Dose-Form{
+        flex-direction:column;
+        align-items: stretch;
+    }   
+}
+@media(max-width:1000px){
+.Dose-Form input,
+    .Dose-Form select{
+        max-width:none ;
+        width: auto;
+    } 
+} 
+@media(max-width:900px){
+    .main{
+        grid-template-columns: 1fr;
+    }
+    .Dose{
+        width:100%;
+    }
+    .btn-all-categories,.btn-category{
+        width:100%;
+    }
+}
+@media(max-width:650px){
+    #share{
+        font-size:10px;
+        padding:10px 10px;
+        margin-left: 2px;
+    }
+    }
+
+@media(max-width:430px){
+    .logo{
+        height:10%;
+        width:1%;
+    }
+#share{
+    position: relative;
+    top:55px;
+    left: 10px;
+}
+}
+@media(max-width:300px){
+    h1{
+        font-size:40px;
+    }
+    .logo{
+        left:0px;
+        height:10%;
+        width:1%;
+    }
+    
+#share{
+    position: relative;
+    top:55px;
+    left: 25px;
+}
+body{
+    margin:0px;
+}
+}
